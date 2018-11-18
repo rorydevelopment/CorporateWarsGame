@@ -66,6 +66,10 @@ public class Employee {
 		return employeeWeapon;
 	}
 	
+	public String getWeaponName() {
+		return employeeWeapon.getWeaponType();
+	}
+	
 	public void setWeapon() {
 		employeeWeapon = new Weapon();
 		employeeHasWeapon = true;

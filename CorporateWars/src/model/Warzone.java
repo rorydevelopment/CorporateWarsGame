@@ -94,14 +94,15 @@ public class Warzone {
 	}
 	
 	public void printGameStatus() {
-		System.out.println("  " + attackCompany.getCompanyName() + "[" +
+		System.out.println("  " + attackCompany.getCompanyName() + "[Size: " +
 							attackCompany.getNumberOfEmployeeObjects() + "]" + 
-							": Employee " + attackEmp.getEmployeeId() + " [" + 
-							attackEmp.getEmployeeHealth() + "]" + " attacks " +
-							victimCompany.getCompanyName() + "[" + 
+							": Employee " + attackEmp.getEmployeeId() + " [HP: " + 
+							attackEmp.getEmployeeHealth() + "]" + " --attacks-- " +
+							victimCompany.getCompanyName() + "[Size: " + 
 							victimCompany.getNumberOfEmployeeObjects() + "]" + 
-							": Employee " + victimEmp.getEmployeeId() + " [" +
-							victimEmp.getEmployeeHealth() + "]");
+							": Employee " + victimEmp.getEmployeeId() + " [HP: " +
+							victimEmp.getEmployeeHealth() + "]" + 
+							" --with-- " + attackEmp.getWeaponName());
 		
 //		System.out.println("  " + attackCompany.getCompanyName() + ": Employee " + 
 //				   attackEmp.getEmployeeId() + " attacks " +
